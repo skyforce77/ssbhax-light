@@ -4,7 +4,7 @@
 function show_help {
   echo "Vous devez préciser votre intention:"
   echo " - $0 install"
-  echo " - $0 start [interface]"
+  echo " - $0 start"
 }
 
 function install_hax {

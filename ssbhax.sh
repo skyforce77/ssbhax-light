@@ -81,6 +81,7 @@ function start_hax {
   sudo iwconfig $wlan_if mode monitor
   sudo ifconfig $wlan_if up
   sudo iwconfig $wlan_if channel 6
+  sudo rfkill unblock all
 
   file="3ds_smashbroshax/pcap_out/smashbros_"$region"v"$version"_beaconhax.pcap"
   if [ -e $file ]

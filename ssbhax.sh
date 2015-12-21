@@ -77,11 +77,11 @@ function start_hax {
   echo "Vous avez choisi la version: $version"
   echo ""
 
+  sudo rfkill unblock all
   sudo ifconfig $wlan_if down
   sudo iwconfig $wlan_if mode monitor
   sudo ifconfig $wlan_if up
   sudo iwconfig $wlan_if channel 6
-  sudo rfkill unblock all
 
   file="3ds_smashbroshax/pcap_out/smashbros_"$region"v"$version"_beaconhax.pcap"
   if [ -e $file ]

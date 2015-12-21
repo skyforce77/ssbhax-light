@@ -26,6 +26,7 @@ function install_hax {
     cd ../3ds_smashbroshax
     make PAYLOADPATH=/smashpayload.bin
     cd ..
+    sudo cp ctr-wlanbeacontool/ctr-wlanbeacontool /usr/bin
     touch hax.lck
     echo ""
     echo "Installation terminée. Vous pouvez maintenant lancer le hack"

@@ -14,6 +14,7 @@ function install_hax {
   else
     git clone https://github.com/yellows8/3ds_smashbroshax.git
     git clone https://github.com/yellows8/ctr-wlanbeacontool.git
+    sudo cp ctr-wlanbeacontool/ctr-wlanbeacontool /usr/bin
     wget https://github.com/aircrack-ng/aircrack-ng/archive/1.2-rc2.tar.gz
     gunzip 1.2-rc2.tar.gz
     tar xvf 1.2-rc2.tar
@@ -26,7 +27,6 @@ function install_hax {
     cd ../3ds_smashbroshax
     make PAYLOADPATH=/smashpayload.bin
     cd ..
-    sudo cp ctr-wlanbeacontool/ctr-wlanbeacontool /usr/bin
     touch hax.lck
     echo ""
     echo "Installation terminée. Vous pouvez maintenant lancer le hack"
